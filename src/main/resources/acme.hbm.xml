@@ -3,18 +3,18 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="com.applesoft.model.RateServiceModel" table="RATE_SERVICE">
+	<class name="com.acme.test01.siphomashapa.model.ACMERequestModel" table="ACME_TABLE">
 		<id name="id" type="int" column="ID">
 			<generator class="increment"/>
 		</id>
-		<property name="branchName">
-			<column name="BRANCH_NAME"/>
+		<property name="accountId">
+			<column name="ACCOUNT_ID"/>
 		</property>
-		<property name="rateService">
-			<column name="RATE_SERVICE"/>
+		<property name="balance">
+			<column name="BALANCE"/>
 		</property>
-		<property name="date">
-			<column name="DATE"/>
+		<property name="accountType">
+			<column name="ACCOUNT_TYPE"/>
 		</property>
 	</class>
 </hibernate-mapping>

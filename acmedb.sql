@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 04, 2017 at 08:11 PM
+-- Generation Time: Sep 10, 2017 at 01:53 PM
 -- Server version: 10.1.22-MariaDB
 -- PHP Version: 7.1.4
 
@@ -19,21 +19,41 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `applesoft`
+-- Database: `acmedb`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rate_service`
+-- Table structure for table `acme_table`
 --
 
-CREATE TABLE `rate_service` (
-  `ID` int(20) NOT NULL,
-  `BRANCH_NAME` varchar(30) NOT NULL,
-  `RATE_SERVICE` varchar(30) NOT NULL,
-  `DATE` varchar(20) NOT NULL
+CREATE TABLE `acme_table` (
+  `ID` int(10) NOT NULL,
+  `ACCOUNT_ID` varchar(15) NOT NULL,
+  `BALANCE` varchar(15) NOT NULL,
+  `ACCOUNT_TYPE` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `acme_table`
+--
+
+INSERT INTO `acme_table` (`ID`, `ACCOUNT_ID`, `BALANCE`, `ACCOUNT_TYPE`) VALUES
+(2, '123', '3336', 'savings'),
+(1, '34343', '3343', ''),
+(3, '567', '1002', 'savings');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `acme_table`
+--
+ALTER TABLE `acme_table`
+  ADD PRIMARY KEY (`ACCOUNT_ID`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
