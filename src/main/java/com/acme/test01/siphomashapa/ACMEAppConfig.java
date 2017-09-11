@@ -23,10 +23,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @ApplicationPath("/acme")
 @EnableSwagger2
-public class AppleSoftAppConfig extends ResourceConfig {
+public class ACMEAppConfig extends ResourceConfig {
 
 	/**
-	 * default constructor of AppleSoftAppConfig
+	 * default constructor of ACMEAppConfig
 	 */
 	public AppleSoftAppConfig() {
 		register(ACMEBankResource.class);
