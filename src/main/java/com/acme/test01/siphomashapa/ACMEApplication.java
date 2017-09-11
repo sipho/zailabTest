@@ -12,9 +12,9 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication(scanBasePackages = "true")
 @ComponentScan(value = "com.acme.test01")
 @EnableAutoConfiguration
-public class ApplesoftApplication {
+public class ACMEApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApplesoftApplication.class, args);
+		SpringApplication.run(ACMEApplication.class, args);
 	}
 }
