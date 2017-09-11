@@ -28,7 +28,7 @@ public class ACMEAppConfig extends ResourceConfig {
 	/**
 	 * default constructor of ACMEAppConfig
 	 */
-	public AppleSoftAppConfig() {
+	public ACMEAppConfig() {
 		register(ACMEBankResource.class);
 	}
 
